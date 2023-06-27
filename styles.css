@@ -1,0 +1,243 @@
+* , html{
+    scroll-behavior: smooth;
+}
+
+#menuside {
+    z-index: 9999999999 ;
+    display: none;
+    position: fixed;
+    color: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--DT_Blog_Button_BG_Color_overlay);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .menuclose{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  #menuside.show {
+    display: block;
+  }
+  
+  #menuside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #menuside li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 2rem;
+  }
+  
+  #menuside a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  #menuside a:hover {
+    color: var(--DT_Blog_Button_BG_Color_overlay);
+  }
+.home-product-carousel{
+    margin-top: 5rem;
+}
+
+.productcountainer{
+    gap: 4rem;
+    display:flex;
+    margin-top: 6rem;
+    justify-content: space-between;
+}
+.priceinfo{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7rem;
+}
+.priceoffer{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.priceoffer h4{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.priceoffer span {
+    
+    width: 50px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--DTPrimaryColor);
+    color: #fff;
+    border-radius: 5px;
+
+}
+.productinfo h3 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+.productinfo p {
+    font-size:15px;
+}
+.realprice{
+    width: fit-content;
+}
+
+@media (max-width:1540px) {
+    .productcountainer{
+        display: block;
+    }
+    .sss{
+        width: fit-content !important;
+    }
+}
+@media (min-width:1541px) {
+    .image_group{
+      width: 486.667px !important;
+      height: 683px !important;
+    }
+    .sss{
+      width: 486.667px !important;
+      height: 683px !important;
+    }
+
+}
+@media (max-width:500px) {
+    .sss{
+      height: fit-content !important;
+    }
+}
+.navactivee{
+    opacity: 1 !important; 
+     visibility: visible !important;
+ -webkit-transform: translateY(0%) !important; 
+    transform: translateY(0%) !important;
+    z-index: 54545 !important;
+}
+.dT_AddToCart{
+    width: 763px !important;
+}
+
+.dt-sc-column.four-column {
+    grid-template-columns: repeat(3,1fr) !important;
+}
+@media (min-width:1050px) and (max-width:9000px) {
+    .slide-heading{
+        width: 57rem !important;
+    }
+    .emam{
+        width: 51rem !important; 
+    }
+}
+
+.slider {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider .slide {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slider .slide img {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .slider .slide.active {
+    opacity: 1;
+  }
+  
+  .slider .slide:last-child {
+    animation: slide 30s linear infinite;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 20px;
+    margin-right: 20px;
+  }
+  
+  .next {
+    right: 20px;
+    margin-left: 20px;
+  }
+  
+  
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+    }
+    6.66% {
+      opacity: 1;
+    }
+    26.66% {
+      opacity: 1;
+    }
+    33.32% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .style_2{
+    margin-top: 30px !important;
+  }
+  .photosofmastery{
+    margin-bottom: 150px;
+    clear: both;
+    width: 100%;
+    float: left
+  }
+  .photosofmastery > h1{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  @media (max-width:768px) {
+    .slider-530d9f37-173e-4d20-82d4-f8eb21e5cbd3-list{
+      background-color: #7d9754;
+    }
+  }
+  @media (max-width:320px) {
+    .priceinfo{
+      display: block;
+    }
+    
+  }
